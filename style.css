@@ -22,46 +22,52 @@ body{
 }
 
 main{
+    color: var(--Light-Gray);
+    width: 700px;
+    height: 70vh;
     margin: auto;
-    margin-top: 60px;
-    width: 650px;
-    box-shadow: 0px 0px 10px var(--Grayish-Blue);
+    margin-top: 90px;
+    justify-content: center;
     border-radius: 10px;
-    color: white;
 }
 
 h1{
     color: var(--Cyan);
 }
 
+h2{
+    font-size: 20px;
+}
+
 .primeiro-h2{
-    font-size: 18px;
     color: var(--Bright-Yellow);
+    font-size: 20px;
 }
 
 .primeiro-texto{
-    width: 550px;
-    line-height: 25px;
     color: var(--Grayish-Blue);
+    line-height: 25px;
 }
 
 .grupo1{
-    height: 190px;
-    padding: 25px 30px 25px 30px;
+    background-color: white;
+    box-shadow: 0px 5px 10px var(--Grayish-Blue);
+    padding: 3% 5% 3% 5%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .grupo2{
+    box-shadow: 0px 5px 10px var(--Grayish-Blue);
     display: flex;
-    height: 280px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .caixa1{
     background-color: var(--color);
     width: 50vw;
-    padding: 30px;
-    padding-top: 20px;
+    padding: 3% 5% 3% 5%;
     border-bottom-left-radius: 10px;
 }
 
@@ -70,76 +76,66 @@ h1{
 }
 
 .preco-29{
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .preco-mes{
-    position: relative;
-    top: 8px;
-    left: 8px;
     color: var(--Light-Gray);
+    line-height: 50px;
+    margin-left: 5px;
 }
 
 .botao{
     background-color: var(--Bright-Yellow);
-    margin-top: 40px;
-    line-height: 50px;
-    width: 90%;
-    height: 50px;
     text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
     border-radius: 5px;
 }
 
 .botao:hover{
-    box-shadow: 0px 0px 10px var(--Bright-Yellow);
+    box-shadow: 0px 0px 15px hsl(71, 87%, 47%);
     cursor: pointer;
 }
-
-
-
 
 .caixa2{
     background-color: var(--color2);
     width: 50vw;
-    padding: 30px;
-    padding-top: 20px;
+    padding: 3% 5% 3% 5%;
     border-bottom-right-radius: 10px;
-    line-height: 22px;
 }
 
-@media (max-width: 700px) {
+.attribution { font-size: 11px; text-align: center; margin-top: 50px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 800px) {
 
     main{
-        width: 90vw;
-    }
-
-    .grupo1{
-        height: 240px;
-        width: 90vw;
-    }
-
-    .primeiro-texto{
-        width: 80vw;
+        width: 85vw;
+        height: 70vh;
     }
 
     .grupo2{
-        display: contents;
+        display: block;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 
     .caixa1{
         background-color: var(--color);
-        width: 80%;
-        padding: 30px;
-        padding-top: 20px;
+        width: auto;
+        padding: 3% 6% 6% 6%;
         border-bottom-left-radius: 0px;
     }
 
     .caixa2{
         background-color: var(--color2);
-        width: 100%;
-        padding: 30px;
-        padding-top: 20px;
+        width: auto;
+        padding: 3% 6% 3% 6%;
         border-bottom-right-radius: 10px;
-        line-height: 22px;
+        border-bottom-left-radius: 10px;
     }
+
+    .attribution { font-size: 11px; text-align: center; margin-top: 300px; }
 }
